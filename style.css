@@ -1,3 +1,22 @@
+*{
+    font-size: 20px;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header div{
+    background: #28c5c5;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 0;
+    border: 20px solid rgb(17, 56, 185);
+}
+.navbar{
+    margin-right: 10px;
+}
+
 .heading{
     color: red;
 }
@@ -7,9 +26,24 @@
 }
 
 .logo{
+    font-size: 30px;
     color: cornflowerblue;
 
 }
-.web-list{
-    color: cornflowerblue;
+
+.nav-links li{
+    list-style: none;
 }
+
+.nav-links li:nth-child(1) a{
+    color: red
+}
+
+.nav-links li:nth-child(2) a{
+    color:blue;
+}
+
+.nav-links li:nth-child(3) a{
+    color:violet;
+}
+
