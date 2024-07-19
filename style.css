@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 header div{
     background: #28c5c5;
     color: white;
@@ -12,17 +28,37 @@ header div{
     padding: 20px;
     margin-top: 0;
     border: 20px solid rgb(17, 56, 185);
+    display: inline-block;
 }
-.navbar{
+
+.navbar h1{
+    float:left;
+}
+
+.navbar ul{
     margin-right: 10px;
+    float: right;
+    right: 0rem;
+    list-style: none;
+}
+.navbar li{
+    float:left;
+    margin: 0rem 0.75rem;
 }
 
-.heading{
+.hero-section{
+    background-image: url(https://images2.alphacoders.com/134/1346617.jpeg);
+    height: 5rem;
+    background-position: center;
+    background-size: cover;
+    text-align: cover;
     color: red;
+    padding-top:1rem;
 }
 
-.description{
-    color:rgb(0, 81, 255);
+.hero-section h1,
+.hero-section h2{
+    text-align: center;
 }
 
 .logo{
@@ -45,5 +81,11 @@ header div{
 
 .nav-links li:nth-child(3) a{
     color:violet;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: rgb(138,186,248)
+    }
 }
 
