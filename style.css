@@ -83,9 +83,3 @@ header div{
     color:violet;
 }
 
-@media (max-width: 600px) {
-    body {
-        background: rgb(138,186,248)
-    }
-}
-
