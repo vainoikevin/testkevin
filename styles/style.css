@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -17,7 +24,7 @@ button,
 label,
 input,
 p {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -41,5 +48,82 @@ ul {
 a {
   color: #2c2c2c;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+}
+
+.main-head {
+  width: 100%;
+  margin: 0 0 0 auto;
+  background: linear-gradient(to left, #5acace, #164aaa);
+}
+.main-head nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.main-head nav img {
+  max-width: 80px;
+}
+.main-head nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex: 2.5 1 10rem;
+  padding-left: 5rem;
+}
+.main-head nav h1 {
+  color: white;
+}
+.main-head nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 40rem;
+  color: white;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 90vh;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.intro .intro-image {
+  padding-left: 2rem;
+  z-index: -1;
+}
+.intro .intro-text {
+  padding-right: 10rem;
+  flex: 1 1 40rem;
+  text-align: right;
+  z-index: 0;
+}
+.intro .intro-text h2 {
+  display: inline-block;
+  font-size: 8rem;
+  padding-top: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro .intro-text h3 {
+  font-size: 6rem;
+  padding: 2rem 0rem;
+}
+.intro .intro-text p {
+  padding-top: 2rem;
+  color: #2c2c2c;
+  font-size: 3.5rem;
 }/*# sourceMappingURL=style.css.map */
