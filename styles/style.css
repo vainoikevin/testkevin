@@ -16,7 +16,7 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 li,
@@ -24,11 +24,11 @@ button,
 label,
 input,
 p {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -48,13 +48,14 @@ ul {
 a {
   color: #2c2c2c;
   text-decoration: none;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .main-head {
   width: 100%;
   margin: 0 0 0 auto;
   background: linear-gradient(to left, #5acace, #164aaa);
+  padding-right: 2rem;
 }
 .main-head nav {
   display: flex;
@@ -64,6 +65,7 @@ a {
   min-height: 10vh;
   width: 100%;
   flex-wrap: wrap;
+  font-size: 3rem;
 }
 .main-head nav img {
   max-width: 80px;
@@ -73,8 +75,8 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  flex: 2.5 1 10rem;
-  padding-left: 5rem;
+  flex: 2 1 10rem;
+  padding-left: 3rem;
 }
 .main-head nav h1 {
   color: white;
@@ -97,17 +99,21 @@ a {
   width: 100%;
   margin: auto;
   flex-wrap: wrap;
-  position: absolute;
+  background-image: linear-gradient(to right, #ffffff, #26cad6);
+  position: relative;
+  overflow: hidden;
 }
 .intro .intro-image {
   padding-left: 2rem;
-  z-index: -1;
+  width: 55vw;
+  flex: 2 1 40rem;
+  position: absolute;
 }
 .intro .intro-text {
   padding-right: 10rem;
   flex: 1 1 40rem;
   text-align: right;
-  z-index: 0;
+  z-index: 1;
 }
 .intro .intro-text h2 {
   display: inline-block;
@@ -125,5 +131,82 @@ a {
 .intro .intro-text p {
   padding-top: 2rem;
   color: #2c2c2c;
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 0 0 auto;
+  width: 100%;
+  background: url("../image/background.png");
+  flex-wrap: wrap;
+}
+.about-me .about-text {
+  flex: 1 1 20rem;
+  top: 0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.about-me .about-text h1 {
+  text-align: center;
+}
+.about-me ul {
+  font-size: 3rem;
+}
+.about-me .about-image {
+  padding-right: 0;
+}
+.about-me .about-image img {
+  width: 50vw;
+}
+
+@media screen and (max-width: 1336px) {
+  html {
+    font-size: 53%;
+  }
+  .intro-image {
+    display: none;
+  }
+  .main-head nav {
+    width: 100%;
+  }
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .about-me .img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  .main-head nav .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+  }
+  .main-head nav ul {
+    flex: 1 1 60rem;
+    margin: 2rem 0rem;
+  }
+  .intro .intro-text {
+    margin-top: 5rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -2,19 +2,21 @@
     width:100%;
     margin:0 0 0 auto;
     background: linear-gradient(to left,#5acace,#164aaa);
+    padding-right: 2rem;
     nav{
         @include flex(space-between,center,row);
         min-height: 10vh;
         width: 100%;
         flex-wrap: wrap;
-        
+        font-size: $text;
+
         img{
             max-width: 80px;
         }
         .logo{
             @include flex(flex-start,center,row);
-            flex: 2.5 1 10rem;
-            padding-left: 5rem;
+            flex: 2 1 10rem;
+            padding-left: 3rem;
         }
         h1{
             color: white;
@@ -34,18 +36,23 @@
     width: 100%;
     margin:auto;
     flex-wrap: wrap;
-    position: absolute;
-
+    background-image: linear-gradient(to right, #ffffff,#26cad6);
+    position: relative;
+    overflow: hidden;
+    
     .intro-image{
         padding-left: 2rem;
-        z-index: -1;
+        width: 55vw;
+        flex: 2 1 40rem;
+        position: absolute;
     }
     
+      
     .intro-text{
         padding-right: 10rem;
         flex: 1 1 40rem;
         text-align: right;
-        z-index: 0;
+        z-index: 1;
 
         h2{
             display: inline-block;
@@ -68,6 +75,7 @@
         }
     }
 }
+
 
 
 

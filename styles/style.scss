@@ -1,10 +1,9 @@
-$header1: 2.5rem;
-$header2: 4rem;
+$header1: 4rem;
+$header2: 3rem;
 $header3: 2.5rem;
 $header4: 2rem;
-$text: 3.5rem;
+$text: 3rem;
 $gradient: linear-gradient(to left,#38d39f,#38a4d3);
-$background-color: #154353;
 $gray-text: #2c2c2c;
 
 @mixin flex($justify, $align, $direction){
@@ -16,3 +15,58 @@ $gray-text: #2c2c2c;
 
 @import "global";
 @import "intro";
+@import "about";
+
+@media screen and (max-width: 1336px) {
+    html {
+      font-size: 53%;
+    }
+    .intro-image {
+      display: none;
+    }
+    .main-head nav {
+      width: 100%;
+    }
+
+    .about-me{
+      @include flex(center,center,column);
+      flex-wrap: wrap;
+      
+      .img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    
+}
+
+@media screen and (max-width: 754px) {
+  html {
+    font-size: 45%;
+  }
+
+  .main-head {
+    width: 100%;
+  
+    nav {
+      .logo{
+        @include flex(flex-start, center, column);
+        flex: 1 1 20rem;
+        margin-top: 2rem;
+        }
+
+        ul {
+          flex: 1 1 60rem;
+          margin: 2rem 0rem;
+        }
+    }
+  }
+
+  .intro .intro-text {
+    margin-top: 5rem;
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+}
