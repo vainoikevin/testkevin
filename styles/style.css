@@ -161,6 +161,7 @@ a {
 }
 .about-me .about-image img {
   width: 50vw;
+  height: 100%;
 }
 
 @media screen and (max-width: 1336px) {
